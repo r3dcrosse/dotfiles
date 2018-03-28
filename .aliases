@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Git aliases
+alias gss="git submodule sync"
+alias gsu="git submodule update --init --recursive --force"
+
+# Prettier ls alias
+alias ls="ls -FGh"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto '
+
+# Easier navigation: .., ..., ...., and .....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."

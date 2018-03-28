@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Export python2.7 path
+PYTHONPATH=/usr/local/bin/python2.7:$PYTHONPATH
+export PYTHONPATH

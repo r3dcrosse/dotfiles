@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Set PS1 to look pretty in terminal
+PS1="🌈  \W 🚀 $ "

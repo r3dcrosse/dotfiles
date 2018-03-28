@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WindowList</key>
+	<array>
+		<dict>
+			<key>Origin</key>
+			<string>{-2560, 1050}</string>
+			<key>ScrollerStyle</key>
+			<integer>0</integer>
+			<key>ShowsTabBar</key>
+			<false/>
+			<key>ShowsTabBarInFullScreen</key>
+			<false/>
+			<key>Window Settings</key>
+			<array>
+				<dict>
+					<key>Tab Scrollback Restorable</key>
+					<true/>
+					<key>Tab Session Class ID</key>
+					<string>54B6FE1E-B228-4AD9-BFDE-E39F220C91E0</string>
+					<key>Tab Settings</key>
+					<dict>
+						<key>ProfileCurrentVersion</key>
+						<real>2.0499999999999998</real>
+						<key>name</key>
+						<string>r3dcrosse</string>
+						<key>type</key>
+						<string>Window Settings</string>
+					</dict>
+					<key>Tab Settings Name</key>
+					<string>r3dcrosse</string>
+					<key>Tab Working Directory URL</key>
+					<string>file://LT-AM2TJ17TFVH4.local/Users/david.wayman/Desktop/phantom/www/phantom_ui/react_build/</string>
+					<key>Tab Working Directory URL String</key>
+					<string>file://LT-AM2TJ17TFVH4.local/Users/david.wayman/Desktop/phantom/www/phantom_ui/react_build</string>
+					<key>TabSelected</key>
+					<true/>
+				</dict>
+			</array>
+			<key>WindowNumber</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Origin</key>
+			<string>{-2560, 683}</string>
+			<key>ScrollerStyle</key>
+			<integer>0</integer>
+			<key>ShowsTabBar</key>
+			<false/>
+			<key>ShowsTabBarInFullScreen</key>
+			<false/>
+			<key>Window Settings</key>
+			<array>
+				<dict>
+					<key>Tab Column Count</key>
+					<integer>80</integer>
+					<key>Tab Row Count</key>
+					<integer>44</integer>
+					<key>Tab Scrollback Restorable</key>
+					<true/>
+					<key>Tab Session Class ID</key>
+					<string>DF1F3A07-4337-4EDB-9004-D0FA7EC6CFAA</string>
+					<key>Tab Settings</key>
+					<dict>
+						<key>ProfileCurrentVersion</key>
+						<real>2.0499999999999998</real>
+						<key>name</key>
+						<string>r3dcrosse</string>
+						<key>type</key>
+						<string>Window Settings</string>
+					</dict>
+					<key>Tab Settings Name</key>
+					<string>r3dcrosse</string>
+					<key>Tab Working Directory URL</key>
+					<string>file://LT-AM2TJ17TFVH4.local/Users/david.wayman/Desktop/phantom/www/phantom_ui/react_build/</string>
+					<key>Tab Working Directory URL String</key>
+					<string>file://LT-AM2TJ17TFVH4.local/Users/david.wayman/Desktop/phantom/www/phantom_ui/react_build</string>
+					<key>TabSelected</key>
+					<true/>
+				</dict>
+			</array>
+			<key>WindowNumber</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>Origin</key>
+			<string>{-2560, 1417}</string>
+			<key>ScrollerStyle</key>
+			<integer>0</integer>
+			<key>ShowsTabBar</key>
+			<false/>
+			<key>ShowsTabBarInFullScreen</key>
+			<false/>
+			<key>Window Settings</key>
+			<array>
+				<dict>
+					<key>Tab Scrollback Restorable</key>
+					<true/>
+					<key>Tab Session Class ID</key>
+					<string>8714EA1F-B257-4912-AE7A-96CB4FF63D0E</string>
+					<key>Tab Settings</key>
+					<dict>
+						<key>ProfileCurrentVersion</key>
+						<real>2.0499999999999998</real>
+						<key>name</key>
+						<string>r3dcrosse</string>
+						<key>type</key>
+						<string>Window Settings</string>
+					</dict>
+					<key>Tab Settings Name</key>
+					<string>r3dcrosse</string>
+					<key>Tab Title</key>
+					<string>root@phantom:/mnt/hgfs/phantom/alchemy</string>
+					<key>Tab Working Directory URL</key>
+					<string>file://LT-AM2TJ17TFVH4.local/Users/david.wayman/</string>
+					<key>Tab Working Directory URL String</key>
+					<string>file://LT-AM2TJ17TFVH4.local/Users/david.wayman</string>
+					<key>TabSelected</key>
+					<true/>
+				</dict>
+			</array>
+			<key>WindowNumber</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>name</key>
+	<string>three-screen</string>
+	<key>type</key>
+	<string>Window Group</string>
+</dict>
+</plist>
