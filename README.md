@@ -18,10 +18,10 @@ commands:
 ```
 🌈  dotfiles 🚀 $ ./install.sh
 ######################################################################
-install.sh
+install.sh [command]
 	This script installs my basic setup for macOS
 
-Usage:
+Usage -> [command]:
   base                      - setup sources & install base packages
   apps                      - install ALL the macOS apps I need
   lolz                      - install lolcat python script

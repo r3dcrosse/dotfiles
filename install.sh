@@ -40,7 +40,8 @@ apps() {
         docker               `# https://www.docker.com/` \
         postman              `# https://www.getpostman.com/` \
         sketch               `# https://www.sketchapp.com/` \
-        spotify              `# https://www.spotify.com/us/`
+        spotify              `# https://www.spotify.com/us/` \
+        dropbox              `# https://www.dropbox.com/install`
 }
 
 lolz() {
