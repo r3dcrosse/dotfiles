@@ -14,7 +14,21 @@ chmod +x install.sh
 ```
 
 Now let's start installing stuff. Run `./install.sh` to get a list of all the
-commands.
+commands:
+```
+🌈  dotfiles 🚀 $ ./install.sh
+######################################################################
+install.sh
+	This script installs my basic setup for macOS
+
+Usage:
+  base                      - setup sources & install base packages
+  apps                      - install ALL the macOS apps I need
+  lolz                      - install lolcat python script
+  atom_packages             - uses apm to install atom packages I use
+######################################################################
+🌈  dotfiles 🚀 $
+```
 
 Start with the `base` command:
 ```
