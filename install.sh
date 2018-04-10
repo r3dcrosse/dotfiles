@@ -32,8 +32,6 @@ apps() {
     brew cask install \
         atom                 `# https://atom.io/` \
         visual-studio-code   `# https://code.visualstudio.com/` \
-        google-chrome        `# https://www.google.com/chrome/` \
-        firefox              `# https://www.mozilla.org/en-US/firefox/new/` \
         slack                `# https://slack.com/` \
         gitter               `# https://gitter.im/` \
         boostnote            `# https://boostnote.io/` \
@@ -68,6 +66,12 @@ atom_packages() {
         toggle-quotes         `# https://atom.io/packages/toggle-quotes`
 }
 
+web_browsers() {
+    brew cask install \
+        google-chrome        `# https://www.google.com/chrome/` \
+        firefox              `# https://www.mozilla.org/en-US/firefox/new/`
+}
+
 
 usage() {
     echo "######################################################################"
@@ -77,6 +81,7 @@ usage() {
     echo "  apps                      - install ALL the macOS apps I need"
     echo "  lolz                      - install lolcat python script"
     echo "  atom_packages             - uses apm to install atom packages I use"
+    echo "  web_browsers              - installs Google Chrome and Firefox"
     echo "######################################################################"
 }
 
@@ -91,6 +96,8 @@ main() {
         lolz
     elif [[ $cmd == "atom_packages" ]]; then
         atom_packages
+    elif [[ $cmd == "web_browsers" ]]; then
+        web_browsers
     else
       usage
       exit 1
