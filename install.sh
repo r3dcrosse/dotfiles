@@ -51,6 +51,7 @@ lolz() {
 atom_packages() {
     # This can only be run after atom is installed (because it uses apm)
     apm install \
+        busy-signal           `# https://atom.io/packages/busy-signal` \
         color-tabs            `# https://atom.io/packages/color-tabs` \
         file-icons            `# https://atom.io/packages/file-icons` \
         highlight-selected    `# https://atom.io/packages/highlight-selected` \
