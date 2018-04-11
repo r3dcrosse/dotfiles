@@ -62,6 +62,7 @@ atom_packages() {
         file-icons            `# https://atom.io/packages/file-icons` \
         highlight-selected    `# https://atom.io/packages/highlight-selected` \
         language-babel        `# https://atom.io/packages/language-babel` \
+        language-docker       `# https://atom.io/packages/language-docker` \
         django-templates      `# https://atom.io/packages/django-templates` \
         intentions            `# https://atom.io/packages/intentions` \
         linter                `# https://atom.io/packages/linter` \
