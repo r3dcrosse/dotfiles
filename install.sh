@@ -76,9 +76,12 @@ link_dotfiles() {
     # add aliases for dotfiles
     for file in ~/dotfiles/.{bash_prompt,aliases,exports}; do
       	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
-        		ln -sfn $$file "$(HOME)"/$$f
+            f="$(basename $file)";
+        		ln -sfn "$file" "$HOME"/"$f"
       	fi
     done
+
+    ln -snf ~/dotfiles/.bash_profile "$HOME"/.bash_profile
 }
 
 get_dotfiles() {
