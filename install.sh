@@ -72,6 +72,28 @@ web_browsers() {
         firefox              `# https://www.mozilla.org/en-US/firefox/new/`
 }
 
+link_dotfiles() {
+    # add aliases for dotfiles
+    for file in ~/dotfiles/.{bash_prompt,aliases,exports}; do
+      	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
+        		ln -sfn $$file "$(HOME)"/$$f
+      	fi
+    done
+}
+
+get_dotfiles() {
+    # Do this in a subshell
+    (
+    cd "$HOME" || exit 1
+
+    # install dotfiles from my repo
+    git clone https://github.com/r3dcrosse/dotfiles.git "$HOME/dotfiles"
+    cd "$HOME/dotfiles" || exit 1
+
+    # run script to symlink dotfiles
+    ./install.sh link_dotfiles
+    )
+}
 
 usage() {
     echo "######################################################################"
@@ -82,6 +104,8 @@ usage() {
     echo "  lolz                      - install lolcat python script"
     echo "  atom_packages             - uses apm to install atom packages I use"
     echo "  web_browsers              - installs Google Chrome and Firefox"
+    echo "  get_dotfiles              - clones my dotfiles from GitHub"
+    echo "  link_dotfiles             - creates symlinks for dotfiles"
     echo "######################################################################"
 }
 
@@ -98,6 +122,10 @@ main() {
         atom_packages
     elif [[ $cmd == "web_browsers" ]]; then
         web_browsers
+    elif [[ $cmd == "get_dotfiles" ]]; then
+        get_dotfiles
+    elif [[ $cmd == "link_dotfiles" ]]; then
+        link_dotfiles
     else
       usage
       exit 1
