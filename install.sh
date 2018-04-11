@@ -74,14 +74,14 @@ web_browsers() {
 
 link_dotfiles() {
     # add aliases for dotfiles
-    for file in ~/dotfiles/.{bash_prompt,aliases,exports}; do
+    for file in "$HOME"/dotfiles/.{bash_prompt,aliases,exports}; do
       	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
-            f="$(basename $file)";
+            f="$(basename $file)"
         		ln -sfn "$file" "$HOME"/"$f"
       	fi
     done
 
-    ln -snf ~/dotfiles/.bash_profile "$HOME"/.bash_profile
+    ln -snf "$HOME"/dotfiles/.bash_profile "$HOME"/.bash_profile
 }
 
 get_dotfiles() {
@@ -94,7 +94,7 @@ get_dotfiles() {
     cd "$HOME/dotfiles" || exit 1
 
     # run script to symlink dotfiles
-    ./install.sh link_dotfiles
+    # ./install.sh link_dotfiles
     )
 }
 

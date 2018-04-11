@@ -3,3 +3,6 @@
 # Export python2.7 path
 PYTHONPATH=/usr/local/bin/python2.7:$PYTHONPATH
 export PYTHONPATH
+
+# Export LSCOLORS theme | https://geoff.greer.fm/lscolors/
+export LSCOLORS="gxfxcxdxbxegedabagacad"
