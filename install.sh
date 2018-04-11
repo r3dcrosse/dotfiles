@@ -19,6 +19,9 @@ base() {
 
     # nodejs | https://nodejs.org/en/download/package-manager/
     brew install node
+    
+    # shellcheck | https://github.com/koalaman/shellcheck
+    brew install shellcheck
 }
 
 apps() {
