@@ -18,14 +18,17 @@ commands:
 ```
 🌈  dotfiles 🚀 $ ./install.sh
 ######################################################################
-install.sh [command]
+install.sh
 	This script installs my basic setup for macOS
 
-Usage -> [command]:
+Usage:
   base                      - setup sources & install base packages
   apps                      - install ALL the macOS apps I need
   lolz                      - install lolcat python script
   atom_packages             - uses apm to install atom packages I use
+  web_browsers              - installs Google Chrome and Firefox
+  get_dotfiles              - clones my dotfiles from GitHub
+  link_dotfiles             - creates symlinks for dotfiles
 ######################################################################
 🌈  dotfiles 🚀 $
 ```
