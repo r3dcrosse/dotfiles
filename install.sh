@@ -13,6 +13,9 @@ base() {
     /usr/bin/ruby -e "$(curl -fsSL \
         https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew update
+    
+    # Turn off Homebrew analytics | https://docs.brew.sh/Analytics.html
+    brew analytics off
 
     # Install Homebrew-Cask | https://caskroom.github.io/
     brew tap caskroom/cask
