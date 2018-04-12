@@ -74,6 +74,14 @@ atom_packages() {
         toggle-quotes         `# https://atom.io/packages/toggle-quotes`
 }
 
+ql_plugins() {
+    # Installs macOS quick look plugins
+    brew cask install \
+        qlcolorcode   `# https://github.com/anthonygelibert/QLColorCode` \
+        qlstephen     `# https://github.com/whomwah/qlstephen` \
+        qlmarkdown    `# https://github.com/toland/qlmarkdown`
+}
+
 web_browsers() {
     brew cask install \
         google-chrome        `# https://www.google.com/chrome/` \
@@ -114,6 +122,7 @@ usage() {
     echo "  apps                      - install ALL the macOS apps I need"
     echo "  lolz                      - install lolcat python script"
     echo "  atom_packages             - uses apm to install atom packages I use"
+    echo "  ql_plugins                - macOS QuickLook plugins"
     echo "  web_browsers              - installs Google Chrome and Firefox"
     echo "  get_dotfiles              - clones my dotfiles from GitHub"
     echo "  link_dotfiles             - creates symlinks for dotfiles"
@@ -131,6 +140,8 @@ main() {
         lolz
     elif [[ $cmd == "atom_packages" ]]; then
         atom_packages
+    elif [[ $cmd == "ql_plugins" ]]; then
+        ql_plugins
     elif [[ $cmd == "web_browsers" ]]; then
         web_browsers
     elif [[ $cmd == "get_dotfiles" ]]; then
