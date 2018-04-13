@@ -13,7 +13,7 @@ base() {
     /usr/bin/ruby -e "$(curl -fsSL \
         https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew update
-    
+
     # Turn off Homebrew analytics | https://docs.brew.sh/Analytics.html
     brew analytics off
 
@@ -22,8 +22,8 @@ base() {
 
     # nodejs | https://nodejs.org/en/download/package-manager/
     brew install node
-    
-    # shellcheck | https://github.com/koalaman/shellcheck
+
+    # Install shellcheck | https://github.com/koalaman/shellcheck
     brew install shellcheck
 }
 
@@ -77,9 +77,15 @@ atom_packages() {
 ql_plugins() {
     # Installs macOS quick look plugins
     brew cask install \
-        qlcolorcode   `# https://github.com/anthonygelibert/QLColorCode` \
-        qlstephen     `# https://github.com/whomwah/qlstephen` \
-        qlmarkdown    `# https://github.com/toland/qlmarkdown`
+        qlcolorcode         `# https://github.com/anthonygelibert/QLColorCode` \
+        qlstephen           `# https://github.com/whomwah/qlstephen` \
+        qlmarkdown          `# https://github.com/toland/qlmarkdown` \
+        quicklook-json      `# http://www.sagtau.com/quicklookjson.html` \
+        qlimagesize         `# https://github.com/Nyx0uf/qlImageSize` \
+        webpquicklook       `# https://github.com/dchest/webp-quicklook` \
+        suspicious-package  `# http://www.mothersruin.com/software/SuspiciousPackage/` \
+        quicklookase        `# https://github.com/rsodre/QuickLookASE` \
+        qlvideo             `# https://github.com/Marginal/QLVideo`
 }
 
 web_browsers() {
