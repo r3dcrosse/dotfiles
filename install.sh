@@ -71,7 +71,8 @@ atom_packages() {
         linter-ui-default     `# https://atom.io/packages/linter-ui-default` \
         minimap               `# https://atom.io/packages/minimap` \
         pigments              `# https://atom.io/packages/pigments` \
-        toggle-quotes         `# https://atom.io/packages/toggle-quotes`
+        toggle-quotes         `# https://atom.io/packages/toggle-quotes` \
+        autocomplete-modules  `# https://atom.io/packages/autocomplete-modules`
 }
 
 ql_plugins() {
