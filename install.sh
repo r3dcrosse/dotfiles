@@ -72,7 +72,8 @@ atom_packages() {
         minimap               `# https://atom.io/packages/minimap` \
         pigments              `# https://atom.io/packages/pigments` \
         toggle-quotes         `# https://atom.io/packages/toggle-quotes` \
-        autocomplete-modules  `# https://atom.io/packages/autocomplete-modules`
+        autocomplete-modules  `# https://atom.io/packages/autocomplete-modules` \
+        prettier-atom         `# https://atom.io/packages/prettier-atom`
 }
 
 ql_plugins() {
