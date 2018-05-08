@@ -25,6 +25,9 @@ base() {
 
     # Install shellcheck | https://github.com/koalaman/shellcheck
     brew install shellcheck
+    
+    # Make Finder show all hidden files
+    defaults write com.apple.finder AppleShowAllFiles YES
 }
 
 apps() {
