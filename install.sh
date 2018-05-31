@@ -76,7 +76,8 @@ atom_packages() {
         pigments              `# https://atom.io/packages/pigments` \
         toggle-quotes         `# https://atom.io/packages/toggle-quotes` \
         autocomplete-modules  `# https://atom.io/packages/autocomplete-modules` \
-        prettier-atom         `# https://atom.io/packages/prettier-atom`
+        prettier-atom         `# https://atom.io/packages/prettier-atom` \
+        nice-index            `# https://github.com/joshwcomeau/nice-index`
 }
 
 ql_plugins() {
