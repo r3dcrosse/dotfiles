@@ -77,7 +77,8 @@ atom_packages() {
         toggle-quotes         `# https://atom.io/packages/toggle-quotes` \
         autocomplete-modules  `# https://atom.io/packages/autocomplete-modules` \
         prettier-atom         `# https://atom.io/packages/prettier-atom` \
-        tab-foldername-index  `# https://atom.io/packages/tab-foldername-index`
+        tab-foldername-index  `# https://atom.io/packages/tab-foldername-index` \
+        better-git-blame      `# https://atom.io/packages/better-git-blame`
 }
 
 ql_plugins() {
