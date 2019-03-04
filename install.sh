@@ -78,7 +78,8 @@ atom_packages() {
         autocomplete-modules  `# https://atom.io/packages/autocomplete-modules` \
         prettier-atom         `# https://atom.io/packages/prettier-atom` \
         tab-foldername-index  `# https://atom.io/packages/tab-foldername-index` \
-        better-git-blame      `# https://atom.io/packages/better-git-blame`
+        better-git-blame      `# https://atom.io/packages/better-git-blame` \
+        bracket-colorizer     `# https://atom.io/packages/bracket-colorizer`
 }
 
 ql_plugins() {
