@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 ################################################################################
 # Install script for various tools/applications                                #
 # literally should probably only be used for a macOS install                   #
@@ -16,9 +16,6 @@ base() {
 
     # Turn off Homebrew analytics | https://docs.brew.sh/Analytics.html
     brew analytics off
-
-    # Install Homebrew-Cask | https://caskroom.github.io/
-    brew tap caskroom/cask
 
     # nodejs | https://nodejs.org/en/download/package-manager/
     brew install node
@@ -39,16 +36,14 @@ apps() {
     #       keep track of the ones that failed and echo their names
     #       at the end of this function
     brew cask install \
-        atom                 `# https://atom.io/` \
         visual-studio-code   `# https://code.visualstudio.com/` \
         slack                `# https://slack.com/` \
-        gitter               `# https://gitter.im/` \
         boostnote            `# https://boostnote.io/` \
         docker               `# https://www.docker.com/` \
         postman              `# https://www.getpostman.com/` \
-        sketch               `# https://www.sketchapp.com/` \
         spotify              `# https://www.spotify.com/us/` \
-        dropbox              `# https://www.dropbox.com/install`
+        dropbox              `# https://www.dropbox.com/install` \
+        zoomus               `# https://www.zoom.us/`
 }
 
 lolz() {
@@ -103,6 +98,7 @@ web_browsers() {
 }
 
 link_dotfiles() {
+    # TODO: Update dotfiles for zsh since that is Apple's default now instead of bash
     # add aliases for dotfiles
     for file in "$HOME"/dotfiles/.{bash_prompt,aliases,exports}; do
       	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
