@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Git aliases
 alias gss="git submodule sync"
 alias gsu="git submodule update --init --recursive --force"

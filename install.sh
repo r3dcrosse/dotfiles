@@ -20,8 +20,10 @@ base() {
     # nodejs | https://nodejs.org/en/download/package-manager/
     brew install node
 
+    # As of 8/10/2020 No longer installing shellcheck since macOS 
+    # default is now zsh. This isn't useful for zsh
     # Install shellcheck | https://github.com/koalaman/shellcheck
-    brew install shellcheck
+    # brew install shellcheck
     
     # Make Finder show all hidden files
     defaults write com.apple.finder AppleShowAllFiles YES
@@ -97,8 +99,7 @@ web_browsers() {
         firefox              `# https://www.mozilla.org/en-US/firefox/new/`
 }
 
-link_dotfiles() {
-    # TODO: Update dotfiles for zsh since that is Apple's default now instead of bash
+link_bash_dotfiles() {
     # add aliases for dotfiles
     for file in "$HOME"/dotfiles/.{bash_prompt,aliases,exports}; do
       	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
@@ -108,6 +109,19 @@ link_dotfiles() {
     done
 
     ln -snf "$HOME"/dotfiles/.bash_profile "$HOME"/.bash_profile
+}
+
+link_dotfiles() {
+    # This is used for linking zsh dotfiles
+    # add aliases for dotfiles
+    for file in "$HOME"/dotfiles/.{aliases}; do
+      	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
+            f="$(basename $file)"
+        		ln -sfn "$file" "$HOME"/"$f"
+      	fi
+    done
+
+    ln -snf "$HOME"/dotfiles/.zshrc "$HOME"/.zshrc
 }
 
 get_dotfiles() {
@@ -135,7 +149,8 @@ usage() {
     echo "  ql_plugins                - macOS QuickLook plugins"
     echo "  web_browsers              - installs Google Chrome and Firefox"
     echo "  get_dotfiles              - clones my dotfiles from GitHub"
-    echo "  link_dotfiles             - creates symlinks for dotfiles"
+    echo "  link_bash_dotfiles        - creates symlinks for bash dotfiles"
+    echo "  link_dotfiles             - creates symlinks for zsh dotfiles"
     echo "######################################################################"
 }
 
@@ -156,6 +171,8 @@ main() {
         web_browsers
     elif [[ $cmd == "get_dotfiles" ]]; then
         get_dotfiles
+    elif [[ $cmd == "link_bash_dotfiles" ]]; then
+        link_bash_dotfiles
     elif [[ $cmd == "link_dotfiles" ]]; then
         link_dotfiles
     else
