@@ -6,7 +6,7 @@ A repo of my personal dotfiles. Probably best used on MacOS, but you most likely
 ## 🌈 Usage 🚀
 Copy the contents of `install.sh` into a file on your Mac.
 ```sh
-curl -O https://raw.githubusercontent.com/r3dcrosse/dotfiles/master/install.sh
+curl -O https://raw.githubusercontent.com/r3dcrosse/dotfiles/latest/install.sh
 ```
 Save the file and make sure you set executable permissions
 ```sh
