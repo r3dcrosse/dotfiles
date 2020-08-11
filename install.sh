@@ -112,15 +112,6 @@ link_bash_dotfiles() {
 }
 
 link_dotfiles() {
-    # This is used for linking zsh dotfiles
-    # add aliases for dotfiles
-    for file in "$HOME"/dotfiles/.{aliases}; do
-      	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
-            f="$(basename $file)"
-        		ln -sfn "$file" "$HOME"/"$f"
-      	fi
-    done
-
     ln -snf "$HOME"/dotfiles/.zshrc "$HOME"/.zshrc
 }
 

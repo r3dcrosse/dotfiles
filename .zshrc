@@ -1,9 +1,13 @@
 PROMPT='🌈 %K{cyan}%F{blue} %1~ %f%k 🚀 %F{red}(っ◔◡◔)っ[̲̅%f '
 
-# Load the shell dotfiles, and then some:
-for file in ~/.{aliases}; do
-	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
-		source "$file"
-	fi
-done
-unset file
+# Prettier ls alias
+alias ls="ls -FGh"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto '
+
+# Easier navigation: .., ..., ...., and .....
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
