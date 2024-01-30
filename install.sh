@@ -10,8 +10,7 @@ base() {
     xcode-select --install
 
     # Homebrew | https://brew.sh/
-    /usr/bin/ruby -e "$(curl -fsSL \
-        https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew update
 
     # Turn off Homebrew analytics | https://docs.brew.sh/Analytics.html
@@ -26,7 +25,7 @@ base() {
     # brew install shellcheck
     
     # Make Finder show all hidden files
-    defaults write com.apple.finder AppleShowAllFiles YES
+    defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder
 }
 
 apps() {
