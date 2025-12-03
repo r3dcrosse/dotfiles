@@ -36,14 +36,14 @@ apps() {
     # TODO: install items in this list, if the download/install fails
     #       keep track of the ones that failed and echo their names
     #       at the end of this function
-    brew cask install \
+    brew install --cask \
         visual-studio-code   `# https://code.visualstudio.com/` \
-        slack                `# https://slack.com/` \
+        tidal                `# https://tidal.com` \
         boostnote            `# https://boostnote.io/` \
         docker               `# https://www.docker.com/` \
-        postman              `# https://www.getpostman.com/` \
-        spotify              `# https://www.spotify.com/us/` \
         dropbox              `# https://www.dropbox.com/install` \
+        postman              `# https://www.getpostman.com/` \
+        slack                `# https://slack.com/` \
         zoomus               `# https://www.zoom.us/`
 }
 
@@ -80,7 +80,7 @@ atom_packages() {
 
 ql_plugins() {
     # Installs macOS quick look plugins
-    brew cask install \
+    brew install --cask \
         qlcolorcode         `# https://github.com/anthonygelibert/QLColorCode` \
         qlstephen           `# https://github.com/whomwah/qlstephen` \
         qlmarkdown          `# https://github.com/toland/qlmarkdown` \
@@ -93,7 +93,7 @@ ql_plugins() {
 }
 
 web_browsers() {
-    brew cask install \
+    brew install --cask \
         google-chrome        `# https://www.google.com/chrome/` \
         firefox              `# https://www.mozilla.org/en-US/firefox/new/`
 }
