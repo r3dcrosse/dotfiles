@@ -16,9 +16,6 @@ base() {
     # Turn off Homebrew analytics | https://docs.brew.sh/Analytics.html
     brew analytics off
 
-    # nodejs | https://nodejs.org/en/download/package-manager/
-    brew install node
-
     # As of 8/10/2020 No longer installing shellcheck since macOS 
     # default is now zsh. This isn't useful for zsh
     # Install shellcheck | https://github.com/koalaman/shellcheck
@@ -26,6 +23,20 @@ base() {
     
     # Make Finder show all hidden files
     defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder
+}
+
+nodejs() {
+    # Install nvm (node version manager)
+    # CHECK THE LATEST VERSION BEFORE RUNNING!!!
+    # https://github.com/nvm-sh/nvm
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+    # Will require a shell restart after to get nvm on path
+    exec $SHELL
+
+    # Install Node.js LTS version
+    # https://nodejs.org/en/about/previous-releases
+    nvm install --lts
 }
 
 apps() {
@@ -133,6 +144,7 @@ usage() {
     echo -e "install.sh\\n\\tThis script installs my basic setup for macOS\\n"
     echo "Usage:"
     echo "  base                      - setup sources & install base packages"
+    echo "  nodejs                    - install nvm and node.js lts version"
     echo "  apps                      - install ALL the macOS apps I need"
     echo "  lolz                      - install lolcat python script"
     echo "  atom_packages             - uses apm to install atom packages I use"
@@ -149,6 +161,8 @@ main() {
 
     if [[ $cmd == "base" ]]; then
         base
+    elif [[ $cmd == "nodejs" ]]; then
+        nodejs
     elif [[ $cmd == "apps" ]]; then
         apps
     elif [[ $cmd == "lolz" ]]; then
